@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C37B7ACB1B938EC7003576B0 /* ReportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37B7ACA1B938EC7003576B0 /* ReportTableViewController.swift */; };
+		C37B7ACD1B938EEF003576B0 /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37B7ACC1B938EEF003576B0 /* ReportTableViewCell.swift */; };
 		C37EA4D71B937A8C000C9537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37EA4D61B937A8C000C9537 /* AppDelegate.swift */; };
 		C37EA4D91B937A8C000C9537 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37EA4D81B937A8C000C9537 /* ViewController.swift */; };
 		C37EA4DC1B937A8C000C9537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37EA4DA1B937A8C000C9537 /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C37B7ACA1B938EC7003576B0 /* ReportTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportTableViewController.swift; sourceTree = "<group>"; };
+		C37B7ACC1B938EEF003576B0 /* ReportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportTableViewCell.swift; sourceTree = "<group>"; };
 		C37EA4D31B937A8C000C9537 /* shinchoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shinchoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37EA4D61B937A8C000C9537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C37EA4D81B937A8C000C9537 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C37B7AC61B938C0A003576B0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C37B7ACA1B938EC7003576B0 /* ReportTableViewController.swift */,
+				C37B7ACC1B938EEF003576B0 /* ReportTableViewCell.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		C37EA4CA1B937A8C000C9537 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +112,7 @@
 		C37EA4D51B937A8C000C9537 /* shinchoku */ = {
 			isa = PBXGroup;
 			children = (
+				C37B7AC61B938C0A003576B0 /* Classes */,
 				C37EA4D61B937A8C000C9537 /* AppDelegate.swift */,
 				C37EA4D81B937A8C000C9537 /* ViewController.swift */,
 				C37EA4DA1B937A8C000C9537 /* Main.storyboard */,
@@ -260,7 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C37EA4D91B937A8C000C9537 /* ViewController.swift in Sources */,
+				C37B7ACB1B938EC7003576B0 /* ReportTableViewController.swift in Sources */,
 				C37EA4D71B937A8C000C9537 /* AppDelegate.swift in Sources */,
+				C37B7ACD1B938EEF003576B0 /* ReportTableViewCell.swift in Sources */,
 				C37EA4DF1B937A8C000C9537 /* shinchoku.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +444,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = shinchokuTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kataoka.shinchokuTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -440,6 +457,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = shinchokuTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kataoka.shinchokuTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -451,6 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = shinchokuUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kataoka.shinchokuUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -463,6 +482,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = shinchokuUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kataoka.shinchokuUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
