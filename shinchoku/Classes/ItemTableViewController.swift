@@ -21,6 +21,7 @@ class ItemTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.navigationItem.title = text
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -41,7 +42,7 @@ class ItemTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return items!.count
+        return items!.count + 1
     }
 
     
