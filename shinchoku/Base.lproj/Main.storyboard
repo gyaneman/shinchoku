@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Report Table View Controller-->
+        <!--進捗どうですか？-->
         <scene sceneID="8pb-jN-dKi">
             <objects>
                 <tableViewController id="czh-HQ-AYQ" customClass="ReportTableViewController" customModule="shinchoku" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,7 +45,18 @@
                             <outlet property="delegate" destination="czh-HQ-AYQ" id="KPk-0r-UZJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="2yr-v4-jba"/>
+                    <navigationItem key="navigationItem" title="進捗どうですか？" id="2yr-v4-jba">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="4W0-Pr-ylJ">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KcQ-Ra-atj">
+                                <rect key="frame" x="508" y="7" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="onButtonSendTouched:" destination="czh-HQ-AYQ" eventType="touchUpInside" id="kBr-aL-qVI"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="vsT-vQ-YUc" kind="show" identifier="toItemTableView" id="85v-qa-MMx"/>
                     </connections>

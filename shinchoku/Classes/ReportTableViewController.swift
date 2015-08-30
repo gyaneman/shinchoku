@@ -10,6 +10,21 @@ import UIKit
 import MessageUI
 
 class ReportTableViewController: UITableViewController, MFMailComposeViewControllerDelegate {
+    
+    /** メールフォーマット サンプル
+    =====
+    [研究活動]
+    * なし
+    [講義関連]
+    * 情報学群実験第4Cのレポートの作成を行った。
+    [就職活動]
+    * インターンシップ
+    [研究室活動]
+    * なし
+    [その他]
+    * swift railsの勉強
+    =====
+    */
 
     var reportItem: [String] = []
     var items: [[String]] = []
@@ -125,6 +140,52 @@ class ReportTableViewController: UITableViewController, MFMailComposeViewControl
         viewController.text = self.reportItem[sender as! Int]
         viewController.items = self.items[sender as! Int]
     }
+
     
+    // 以下メール関係
+    @IBAction func onButtonSendTouched(sender: AnyObject) {
+        if MFMailComposeViewController.canSendMail() == false {
+            print("MFMailCompose can not send mail")
+            return
+        }
+        
+        let mailViewController = MFMailComposeViewController()
+        
+        mailViewController.mailComposeDelegate = self
+        
+        mailViewController.setSubject("MessageUI test")
+        
+        let toRecipients = ["gyanexus7@gmail.com"]
+        mailViewController.setToRecipients(toRecipients)
+        
+        mailViewController.setMessageBody(createMailBody(), isHTML: false)
+        
+        self.presentViewController(mailViewController, animated: true, completion: nil)
+    }
     
+    private func createMailBody() -> String {
+        return ""
+    }
+
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+        
+        switch result.rawValue {
+        case MFMailComposeResultCancelled.rawValue:
+            print("Email Send Cancelled")
+            break
+        case MFMailComposeResultSaved.rawValue:
+            print("Email Saved as a Draft")
+            break
+        case MFMailComposeResultSent.rawValue:
+            print("Email Sent Successfully")
+            break
+        case MFMailComposeResultFailed.rawValue:
+            print("Email Send Failed")
+            break
+        default:
+            break
+        }
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 }
