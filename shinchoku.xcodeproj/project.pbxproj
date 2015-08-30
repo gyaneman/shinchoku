@@ -7,51 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C3E1DB261B8ADBDF00297B59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E1DB251B8ADBDF00297B59 /* AppDelegate.swift */; };
-		C3E1DB291B8ADBDF00297B59 /* shinchoku.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3E1DB271B8ADBDF00297B59 /* shinchoku.xcdatamodeld */; };
-		C3E1DB2B1B8ADBE000297B59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E1DB2A1B8ADBE000297B59 /* ViewController.swift */; };
-		C3E1DB2E1B8ADBE000297B59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E1DB2C1B8ADBE000297B59 /* Main.storyboard */; };
-		C3E1DB301B8ADBE000297B59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3E1DB2F1B8ADBE000297B59 /* Images.xcassets */; };
-		C3E1DB331B8ADBE000297B59 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3E1DB311B8ADBE000297B59 /* LaunchScreen.xib */; };
-		C3E1DB3F1B8ADBE000297B59 /* shinchokuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E1DB3E1B8ADBE000297B59 /* shinchokuTests.swift */; };
-		C3E1DB491B8ADCA600297B59 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3E1DB481B8ADCA600297B59 /* MessageUI.framework */; };
+		C37EA4D71B937A8C000C9537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37EA4D61B937A8C000C9537 /* AppDelegate.swift */; };
+		C37EA4D91B937A8C000C9537 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37EA4D81B937A8C000C9537 /* ViewController.swift */; };
+		C37EA4DC1B937A8C000C9537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37EA4DA1B937A8C000C9537 /* Main.storyboard */; };
+		C37EA4DF1B937A8C000C9537 /* shinchoku.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C37EA4DD1B937A8C000C9537 /* shinchoku.xcdatamodeld */; };
+		C37EA4E11B937A8C000C9537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C37EA4E01B937A8C000C9537 /* Assets.xcassets */; };
+		C37EA4E41B937A8C000C9537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37EA4E21B937A8C000C9537 /* LaunchScreen.storyboard */; };
+		C37EA4EF1B937A8D000C9537 /* shinchokuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37EA4EE1B937A8D000C9537 /* shinchokuTests.swift */; };
+		C37EA4FA1B937A8D000C9537 /* shinchokuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37EA4F91B937A8D000C9537 /* shinchokuUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C3E1DB391B8ADBE000297B59 /* PBXContainerItemProxy */ = {
+		C37EA4EB1B937A8D000C9537 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C3E1DB181B8ADBDF00297B59 /* Project object */;
+			containerPortal = C37EA4CB1B937A8C000C9537 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C3E1DB1F1B8ADBDF00297B59;
+			remoteGlobalIDString = C37EA4D21B937A8C000C9537;
+			remoteInfo = shinchoku;
+		};
+		C37EA4F61B937A8D000C9537 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C37EA4CB1B937A8C000C9537 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C37EA4D21B937A8C000C9537;
 			remoteInfo = shinchoku;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C3E1DB201B8ADBDF00297B59 /* shinchoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shinchoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3E1DB241B8ADBDF00297B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C3E1DB251B8ADBDF00297B59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3E1DB281B8ADBDF00297B59 /* shinchoku.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = shinchoku.xcdatamodel; sourceTree = "<group>"; };
-		C3E1DB2A1B8ADBE000297B59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C3E1DB2D1B8ADBE000297B59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C3E1DB2F1B8ADBE000297B59 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C3E1DB321B8ADBE000297B59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		C3E1DB381B8ADBE000297B59 /* shinchokuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shinchokuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3E1DB3D1B8ADBE000297B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C3E1DB3E1B8ADBE000297B59 /* shinchokuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shinchokuTests.swift; sourceTree = "<group>"; };
-		C3E1DB481B8ADCA600297B59 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		C37EA4D31B937A8C000C9537 /* shinchoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shinchoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37EA4D61B937A8C000C9537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C37EA4D81B937A8C000C9537 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C37EA4DB1B937A8C000C9537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C37EA4DE1B937A8C000C9537 /* shinchoku.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = shinchoku.xcdatamodel; sourceTree = "<group>"; };
+		C37EA4E01B937A8C000C9537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C37EA4E31B937A8C000C9537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C37EA4E51B937A8C000C9537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C37EA4EA1B937A8D000C9537 /* shinchokuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shinchokuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37EA4EE1B937A8D000C9537 /* shinchokuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shinchokuTests.swift; sourceTree = "<group>"; };
+		C37EA4F01B937A8D000C9537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C37EA4F51B937A8D000C9537 /* shinchokuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shinchokuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37EA4F91B937A8D000C9537 /* shinchokuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shinchokuUITests.swift; sourceTree = "<group>"; };
+		C37EA4FB1B937A8D000C9537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C3E1DB1D1B8ADBDF00297B59 /* Frameworks */ = {
+		C37EA4D01B937A8C000C9537 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3E1DB491B8ADCA600297B59 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3E1DB351B8ADBE000297B59 /* Frameworks */ = {
+		C37EA4E71B937A8D000C9537 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C37EA4F21B937A8D000C9537 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -61,74 +76,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C3E1DB171B8ADBDF00297B59 = {
+		C37EA4CA1B937A8C000C9537 = {
 			isa = PBXGroup;
 			children = (
-				C3E1DB481B8ADCA600297B59 /* MessageUI.framework */,
-				C3E1DB221B8ADBDF00297B59 /* shinchoku */,
-				C3E1DB3B1B8ADBE000297B59 /* shinchokuTests */,
-				C3E1DB211B8ADBDF00297B59 /* Products */,
+				C37EA4D51B937A8C000C9537 /* shinchoku */,
+				C37EA4ED1B937A8D000C9537 /* shinchokuTests */,
+				C37EA4F81B937A8D000C9537 /* shinchokuUITests */,
+				C37EA4D41B937A8C000C9537 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C3E1DB211B8ADBDF00297B59 /* Products */ = {
+		C37EA4D41B937A8C000C9537 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C3E1DB201B8ADBDF00297B59 /* shinchoku.app */,
-				C3E1DB381B8ADBE000297B59 /* shinchokuTests.xctest */,
+				C37EA4D31B937A8C000C9537 /* shinchoku.app */,
+				C37EA4EA1B937A8D000C9537 /* shinchokuTests.xctest */,
+				C37EA4F51B937A8D000C9537 /* shinchokuUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C3E1DB221B8ADBDF00297B59 /* shinchoku */ = {
+		C37EA4D51B937A8C000C9537 /* shinchoku */ = {
 			isa = PBXGroup;
 			children = (
-				C3E1DB251B8ADBDF00297B59 /* AppDelegate.swift */,
-				C3E1DB2A1B8ADBE000297B59 /* ViewController.swift */,
-				C3E1DB2C1B8ADBE000297B59 /* Main.storyboard */,
-				C3E1DB2F1B8ADBE000297B59 /* Images.xcassets */,
-				C3E1DB311B8ADBE000297B59 /* LaunchScreen.xib */,
-				C3E1DB271B8ADBDF00297B59 /* shinchoku.xcdatamodeld */,
-				C3E1DB231B8ADBDF00297B59 /* Supporting Files */,
+				C37EA4D61B937A8C000C9537 /* AppDelegate.swift */,
+				C37EA4D81B937A8C000C9537 /* ViewController.swift */,
+				C37EA4DA1B937A8C000C9537 /* Main.storyboard */,
+				C37EA4E01B937A8C000C9537 /* Assets.xcassets */,
+				C37EA4E21B937A8C000C9537 /* LaunchScreen.storyboard */,
+				C37EA4E51B937A8C000C9537 /* Info.plist */,
+				C37EA4DD1B937A8C000C9537 /* shinchoku.xcdatamodeld */,
 			);
 			path = shinchoku;
 			sourceTree = "<group>";
 		};
-		C3E1DB231B8ADBDF00297B59 /* Supporting Files */ = {
+		C37EA4ED1B937A8D000C9537 /* shinchokuTests */ = {
 			isa = PBXGroup;
 			children = (
-				C3E1DB241B8ADBDF00297B59 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C3E1DB3B1B8ADBE000297B59 /* shinchokuTests */ = {
-			isa = PBXGroup;
-			children = (
-				C3E1DB3E1B8ADBE000297B59 /* shinchokuTests.swift */,
-				C3E1DB3C1B8ADBE000297B59 /* Supporting Files */,
+				C37EA4EE1B937A8D000C9537 /* shinchokuTests.swift */,
+				C37EA4F01B937A8D000C9537 /* Info.plist */,
 			);
 			path = shinchokuTests;
 			sourceTree = "<group>";
 		};
-		C3E1DB3C1B8ADBE000297B59 /* Supporting Files */ = {
+		C37EA4F81B937A8D000C9537 /* shinchokuUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C3E1DB3D1B8ADBE000297B59 /* Info.plist */,
+				C37EA4F91B937A8D000C9537 /* shinchokuUITests.swift */,
+				C37EA4FB1B937A8D000C9537 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = shinchokuUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C3E1DB1F1B8ADBDF00297B59 /* shinchoku */ = {
+		C37EA4D21B937A8C000C9537 /* shinchoku */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C3E1DB421B8ADBE000297B59 /* Build configuration list for PBXNativeTarget "shinchoku" */;
+			buildConfigurationList = C37EA4FE1B937A8D000C9537 /* Build configuration list for PBXNativeTarget "shinchoku" */;
 			buildPhases = (
-				C3E1DB1C1B8ADBDF00297B59 /* Sources */,
-				C3E1DB1D1B8ADBDF00297B59 /* Frameworks */,
-				C3E1DB1E1B8ADBDF00297B59 /* Resources */,
+				C37EA4CF1B937A8C000C9537 /* Sources */,
+				C37EA4D01B937A8C000C9537 /* Frameworks */,
+				C37EA4D11B937A8C000C9537 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -136,46 +145,69 @@
 			);
 			name = shinchoku;
 			productName = shinchoku;
-			productReference = C3E1DB201B8ADBDF00297B59 /* shinchoku.app */;
+			productReference = C37EA4D31B937A8C000C9537 /* shinchoku.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C3E1DB371B8ADBE000297B59 /* shinchokuTests */ = {
+		C37EA4E91B937A8D000C9537 /* shinchokuTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C3E1DB451B8ADBE000297B59 /* Build configuration list for PBXNativeTarget "shinchokuTests" */;
+			buildConfigurationList = C37EA5011B937A8D000C9537 /* Build configuration list for PBXNativeTarget "shinchokuTests" */;
 			buildPhases = (
-				C3E1DB341B8ADBE000297B59 /* Sources */,
-				C3E1DB351B8ADBE000297B59 /* Frameworks */,
-				C3E1DB361B8ADBE000297B59 /* Resources */,
+				C37EA4E61B937A8D000C9537 /* Sources */,
+				C37EA4E71B937A8D000C9537 /* Frameworks */,
+				C37EA4E81B937A8D000C9537 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C3E1DB3A1B8ADBE000297B59 /* PBXTargetDependency */,
+				C37EA4EC1B937A8D000C9537 /* PBXTargetDependency */,
 			);
 			name = shinchokuTests;
 			productName = shinchokuTests;
-			productReference = C3E1DB381B8ADBE000297B59 /* shinchokuTests.xctest */;
+			productReference = C37EA4EA1B937A8D000C9537 /* shinchokuTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C37EA4F41B937A8D000C9537 /* shinchokuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C37EA5041B937A8D000C9537 /* Build configuration list for PBXNativeTarget "shinchokuUITests" */;
+			buildPhases = (
+				C37EA4F11B937A8D000C9537 /* Sources */,
+				C37EA4F21B937A8D000C9537 /* Frameworks */,
+				C37EA4F31B937A8D000C9537 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C37EA4F71B937A8D000C9537 /* PBXTargetDependency */,
+			);
+			name = shinchokuUITests;
+			productName = shinchokuUITests;
+			productReference = C37EA4F51B937A8D000C9537 /* shinchokuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C3E1DB181B8ADBDF00297B59 /* Project object */ = {
+		C37EA4CB1B937A8C000C9537 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = kataoka;
 				TargetAttributes = {
-					C3E1DB1F1B8ADBDF00297B59 = {
-						CreatedOnToolsVersion = 6.4;
+					C37EA4D21B937A8C000C9537 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = REAN4964U2;
 					};
-					C3E1DB371B8ADBE000297B59 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = C3E1DB1F1B8ADBDF00297B59;
+					C37EA4E91B937A8D000C9537 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = C37EA4D21B937A8C000C9537;
+					};
+					C37EA4F41B937A8D000C9537 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = C37EA4D21B937A8C000C9537;
 					};
 				};
 			};
-			buildConfigurationList = C3E1DB1B1B8ADBDF00297B59 /* Build configuration list for PBXProject "shinchoku" */;
+			buildConfigurationList = C37EA4CE1B937A8C000C9537 /* Build configuration list for PBXProject "shinchoku" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -183,29 +215,37 @@
 				en,
 				Base,
 			);
-			mainGroup = C3E1DB171B8ADBDF00297B59;
-			productRefGroup = C3E1DB211B8ADBDF00297B59 /* Products */;
+			mainGroup = C37EA4CA1B937A8C000C9537;
+			productRefGroup = C37EA4D41B937A8C000C9537 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C3E1DB1F1B8ADBDF00297B59 /* shinchoku */,
-				C3E1DB371B8ADBE000297B59 /* shinchokuTests */,
+				C37EA4D21B937A8C000C9537 /* shinchoku */,
+				C37EA4E91B937A8D000C9537 /* shinchokuTests */,
+				C37EA4F41B937A8D000C9537 /* shinchokuUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C3E1DB1E1B8ADBDF00297B59 /* Resources */ = {
+		C37EA4D11B937A8C000C9537 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3E1DB2E1B8ADBE000297B59 /* Main.storyboard in Resources */,
-				C3E1DB331B8ADBE000297B59 /* LaunchScreen.xib in Resources */,
-				C3E1DB301B8ADBE000297B59 /* Images.xcassets in Resources */,
+				C37EA4E41B937A8C000C9537 /* LaunchScreen.storyboard in Resources */,
+				C37EA4E11B937A8C000C9537 /* Assets.xcassets in Resources */,
+				C37EA4DC1B937A8C000C9537 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3E1DB361B8ADBE000297B59 /* Resources */ = {
+		C37EA4E81B937A8D000C9537 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C37EA4F31B937A8D000C9537 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -215,55 +255,68 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C3E1DB1C1B8ADBDF00297B59 /* Sources */ = {
+		C37EA4CF1B937A8C000C9537 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3E1DB2B1B8ADBE000297B59 /* ViewController.swift in Sources */,
-				C3E1DB291B8ADBDF00297B59 /* shinchoku.xcdatamodeld in Sources */,
-				C3E1DB261B8ADBDF00297B59 /* AppDelegate.swift in Sources */,
+				C37EA4D91B937A8C000C9537 /* ViewController.swift in Sources */,
+				C37EA4D71B937A8C000C9537 /* AppDelegate.swift in Sources */,
+				C37EA4DF1B937A8C000C9537 /* shinchoku.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3E1DB341B8ADBE000297B59 /* Sources */ = {
+		C37EA4E61B937A8D000C9537 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3E1DB3F1B8ADBE000297B59 /* shinchokuTests.swift in Sources */,
+				C37EA4EF1B937A8D000C9537 /* shinchokuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C37EA4F11B937A8D000C9537 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37EA4FA1B937A8D000C9537 /* shinchokuUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C3E1DB3A1B8ADBE000297B59 /* PBXTargetDependency */ = {
+		C37EA4EC1B937A8D000C9537 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C3E1DB1F1B8ADBDF00297B59 /* shinchoku */;
-			targetProxy = C3E1DB391B8ADBE000297B59 /* PBXContainerItemProxy */;
+			target = C37EA4D21B937A8C000C9537 /* shinchoku */;
+			targetProxy = C37EA4EB1B937A8D000C9537 /* PBXContainerItemProxy */;
+		};
+		C37EA4F71B937A8D000C9537 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C37EA4D21B937A8C000C9537 /* shinchoku */;
+			targetProxy = C37EA4F61B937A8D000C9537 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C3E1DB2C1B8ADBE000297B59 /* Main.storyboard */ = {
+		C37EA4DA1B937A8C000C9537 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C3E1DB2D1B8ADBE000297B59 /* Base */,
+				C37EA4DB1B937A8C000C9537 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		C3E1DB311B8ADBE000297B59 /* LaunchScreen.xib */ = {
+		C37EA4E21B937A8C000C9537 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C3E1DB321B8ADBE000297B59 /* Base */,
+				C37EA4E31B937A8C000C9537 /* Base */,
 			);
-			name = LaunchScreen.xib;
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C3E1DB401B8ADBE000297B59 /* Debug */ = {
+		C37EA4FC1B937A8D000C9537 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,8 +335,9 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -292,14 +346,13 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -307,7 +360,7 @@
 			};
 			name = Debug;
 		};
-		C3E1DB411B8ADBE000297B59 /* Release */ = {
+		C37EA4FD1B937A8D000C9537 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -337,109 +390,140 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		C3E1DB431B8ADBE000297B59 /* Debug */ = {
+		C37EA4FF1B937A8D000C9537 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = shinchoku/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kataoka.shinchoku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		C3E1DB441B8ADBE000297B59 /* Release */ = {
+		C37EA5001B937A8D000C9537 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = shinchoku/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kataoka.shinchoku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		C3E1DB461B8ADBE000297B59 /* Debug */ = {
+		C37EA5021B937A8D000C9537 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = shinchokuTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kataoka.shinchokuTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/shinchoku.app/shinchoku";
 			};
 			name = Debug;
 		};
-		C3E1DB471B8ADBE000297B59 /* Release */ = {
+		C37EA5031B937A8D000C9537 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = shinchokuTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kataoka.shinchokuTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/shinchoku.app/shinchoku";
+			};
+			name = Release;
+		};
+		C37EA5051B937A8D000C9537 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = shinchokuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kataoka.shinchokuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = shinchoku;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C37EA5061B937A8D000C9537 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = shinchokuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kataoka.shinchokuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = shinchoku;
+				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C3E1DB1B1B8ADBDF00297B59 /* Build configuration list for PBXProject "shinchoku" */ = {
+		C37EA4CE1B937A8C000C9537 /* Build configuration list for PBXProject "shinchoku" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C3E1DB401B8ADBE000297B59 /* Debug */,
-				C3E1DB411B8ADBE000297B59 /* Release */,
+				C37EA4FC1B937A8D000C9537 /* Debug */,
+				C37EA4FD1B937A8D000C9537 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C3E1DB421B8ADBE000297B59 /* Build configuration list for PBXNativeTarget "shinchoku" */ = {
+		C37EA4FE1B937A8D000C9537 /* Build configuration list for PBXNativeTarget "shinchoku" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C3E1DB431B8ADBE000297B59 /* Debug */,
-				C3E1DB441B8ADBE000297B59 /* Release */,
+				C37EA4FF1B937A8D000C9537 /* Debug */,
+				C37EA5001B937A8D000C9537 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		C3E1DB451B8ADBE000297B59 /* Build configuration list for PBXNativeTarget "shinchokuTests" */ = {
+		C37EA5011B937A8D000C9537 /* Build configuration list for PBXNativeTarget "shinchokuTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C3E1DB461B8ADBE000297B59 /* Debug */,
-				C3E1DB471B8ADBE000297B59 /* Release */,
+				C37EA5021B937A8D000C9537 /* Debug */,
+				C37EA5031B937A8D000C9537 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C37EA5041B937A8D000C9537 /* Build configuration list for PBXNativeTarget "shinchokuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C37EA5051B937A8D000C9537 /* Debug */,
+				C37EA5061B937A8D000C9537 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C3E1DB271B8ADBDF00297B59 /* shinchoku.xcdatamodeld */ = {
+		C37EA4DD1B937A8C000C9537 /* shinchoku.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				C3E1DB281B8ADBDF00297B59 /* shinchoku.xcdatamodel */,
+				C37EA4DE1B937A8C000C9537 /* shinchoku.xcdatamodel */,
 			);
-			currentVersion = C3E1DB281B8ADBDF00297B59 /* shinchoku.xcdatamodel */;
+			currentVersion = C37EA4DE1B937A8C000C9537 /* shinchoku.xcdatamodel */;
 			path = shinchoku.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = C3E1DB181B8ADBDF00297B59 /* Project object */;
+	rootObject = C37EA4CB1B937A8C000C9537 /* Project object */;
 }
