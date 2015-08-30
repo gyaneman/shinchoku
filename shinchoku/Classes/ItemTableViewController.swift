@@ -1,5 +1,5 @@
 //
-//  ReportTableViewController.swift
+//  ItemTableViewController.swift
 //  shinchoku
 //
 //  Created by 片岡崇史 on 2015/08/31.
@@ -7,12 +7,11 @@
 //
 
 import UIKit
-import MessageUI
 
-class ReportTableViewController: UITableViewController, MFMailComposeViewControllerDelegate {
+class ItemTableViewController: UITableViewController {
 
-    var reportItem: [String] = []
-    var items: [[String]] = []
+    var text: String?
+    var items: [String]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,27 +20,11 @@ class ReportTableViewController: UITableViewController, MFMailComposeViewControl
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        setReportItem()
+        self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
-    private func setReportItem() {
-        reportItem.append("研究活動")
-        items.append([])
-        reportItem.append("講義関連")
-        items.append([])
-        reportItem.append("就職活動")
-        items.append([])
-        reportItem.append("研究室活動")
-        items.append([])
-        reportItem.append("その他")
-        items.append([])
-    }
-
     override func viewDidAppear(animated: Bool) {
-        if (self.tableView.indexPathForSelectedRow != nil) {
-            self.tableView.deselectRowAtIndexPath(self.tableView.indexPathForSelectedRow!, animated: false)
-        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,21 +41,17 @@ class ReportTableViewController: UITableViewController, MFMailComposeViewControl
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return items!.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ReportTableViewCell", forIndexPath: indexPath) as! ReportTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("ItemTableViewCell", forIndexPath: indexPath) as! ItemTableViewCell
 
         // Configure the cell...
-        cell.labelTitle.text = self.reportItem[indexPath.row]
+        cell.labelNumber.text = indexPath.row.description
 
         return cell
-    }
-
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("toItemTableView",sender: indexPath.row)
     }
     
 
@@ -111,20 +90,14 @@ class ReportTableViewController: UITableViewController, MFMailComposeViewControl
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier != "toItemTableView" {
-            return
-        }
-        let viewController: ItemTableViewController = segue.destinationViewController as! ItemTableViewController
-        viewController.text = self.reportItem[sender as! Int]
-        viewController.items = self.items[sender as! Int]
     }
-    
-    
+    */
+
 }

@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		C37B7ACB1B938EC7003576B0 /* ReportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37B7ACA1B938EC7003576B0 /* ReportTableViewController.swift */; };
 		C37B7ACD1B938EEF003576B0 /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37B7ACC1B938EEF003576B0 /* ReportTableViewCell.swift */; };
+		C37B7ACF1B939A0B003576B0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B7ACE1B939A0B003576B0 /* MessageUI.framework */; };
+		C37B7AD11B939C01003576B0 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37B7AD01B939C01003576B0 /* ItemTableViewCell.swift */; };
+		C37B7AD31B939C22003576B0 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37B7AD21B939C22003576B0 /* ItemTableViewController.swift */; };
 		C37EA4D71B937A8C000C9537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37EA4D61B937A8C000C9537 /* AppDelegate.swift */; };
-		C37EA4D91B937A8C000C9537 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37EA4D81B937A8C000C9537 /* ViewController.swift */; };
 		C37EA4DC1B937A8C000C9537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37EA4DA1B937A8C000C9537 /* Main.storyboard */; };
 		C37EA4DF1B937A8C000C9537 /* shinchoku.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C37EA4DD1B937A8C000C9537 /* shinchoku.xcdatamodeld */; };
 		C37EA4E11B937A8C000C9537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C37EA4E01B937A8C000C9537 /* Assets.xcassets */; };
@@ -39,9 +41,11 @@
 /* Begin PBXFileReference section */
 		C37B7ACA1B938EC7003576B0 /* ReportTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportTableViewController.swift; sourceTree = "<group>"; };
 		C37B7ACC1B938EEF003576B0 /* ReportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportTableViewCell.swift; sourceTree = "<group>"; };
+		C37B7ACE1B939A0B003576B0 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		C37B7AD01B939C01003576B0 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		C37B7AD21B939C22003576B0 /* ItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
 		C37EA4D31B937A8C000C9537 /* shinchoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shinchoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37EA4D61B937A8C000C9537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C37EA4D81B937A8C000C9537 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C37EA4DB1B937A8C000C9537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C37EA4DE1B937A8C000C9537 /* shinchoku.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = shinchoku.xcdatamodel; sourceTree = "<group>"; };
 		C37EA4E01B937A8C000C9537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C37B7ACF1B939A0B003576B0 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 			children = (
 				C37B7ACA1B938EC7003576B0 /* ReportTableViewController.swift */,
 				C37B7ACC1B938EEF003576B0 /* ReportTableViewCell.swift */,
+				C37B7AD01B939C01003576B0 /* ItemTableViewCell.swift */,
+				C37B7AD21B939C22003576B0 /* ItemTableViewController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -92,6 +99,7 @@
 		C37EA4CA1B937A8C000C9537 = {
 			isa = PBXGroup;
 			children = (
+				C37B7ACE1B939A0B003576B0 /* MessageUI.framework */,
 				C37EA4D51B937A8C000C9537 /* shinchoku */,
 				C37EA4ED1B937A8D000C9537 /* shinchokuTests */,
 				C37EA4F81B937A8D000C9537 /* shinchokuUITests */,
@@ -114,7 +122,6 @@
 			children = (
 				C37B7AC61B938C0A003576B0 /* Classes */,
 				C37EA4D61B937A8C000C9537 /* AppDelegate.swift */,
-				C37EA4D81B937A8C000C9537 /* ViewController.swift */,
 				C37EA4DA1B937A8C000C9537 /* Main.storyboard */,
 				C37EA4E01B937A8C000C9537 /* Assets.xcassets */,
 				C37EA4E21B937A8C000C9537 /* LaunchScreen.storyboard */,
@@ -273,10 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C37EA4D91B937A8C000C9537 /* ViewController.swift in Sources */,
 				C37B7ACB1B938EC7003576B0 /* ReportTableViewController.swift in Sources */,
 				C37EA4D71B937A8C000C9537 /* AppDelegate.swift in Sources */,
+				C37B7AD11B939C01003576B0 /* ItemTableViewCell.swift in Sources */,
 				C37B7ACD1B938EEF003576B0 /* ReportTableViewCell.swift in Sources */,
+				C37B7AD31B939C22003576B0 /* ItemTableViewController.swift in Sources */,
 				C37EA4DF1B937A8C000C9537 /* shinchoku.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
