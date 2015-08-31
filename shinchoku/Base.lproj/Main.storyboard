@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--進捗どうですか？-->
+        <!--進捗どうですか？ww-->
         <scene sceneID="8pb-jN-dKi">
             <objects>
                 <tableViewController id="czh-HQ-AYQ" customClass="ReportTableViewController" customModule="shinchoku" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,7 +45,7 @@
                             <outlet property="delegate" destination="czh-HQ-AYQ" id="KPk-0r-UZJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="進捗どうですか？" id="2yr-v4-jba">
+                    <navigationItem key="navigationItem" title="進捗どうですか？ww" id="2yr-v4-jba">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="4W0-Pr-ylJ">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KcQ-Ra-atj">
                                 <rect key="frame" x="508" y="7" width="72" height="30"/>
@@ -128,7 +128,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EEo-94-fRf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="1" green="0.583489041676718" blue="0.58750902790190707" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.65027019090000004" green="0.72312694580000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
