@@ -90,24 +90,46 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pg3-Rh-q2C">
-                                            <rect key="frame" x="58" y="7" width="534" height="30"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4S-pl-sKz">
+                                            <rect key="frame" x="58" y="11" width="534" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="Pg3-Rh-q2C" secondAttribute="trailing" id="GTj-b4-fh1"/>
-                                        <constraint firstItem="Pg3-Rh-q2C" firstAttribute="leading" secondItem="4Yd-rm-9N0" secondAttribute="trailing" constant="8" id="HKA-ca-TnP"/>
-                                        <constraint firstItem="Pg3-Rh-q2C" firstAttribute="centerY" secondItem="uUE-Ap-Uh8" secondAttribute="centerY" id="Id1-71-2yN"/>
+                                        <constraint firstItem="W4S-pl-sKz" firstAttribute="centerY" secondItem="uUE-Ap-Uh8" secondAttribute="centerY" id="JBs-YI-Go7"/>
                                         <constraint firstItem="4Yd-rm-9N0" firstAttribute="centerY" secondItem="uUE-Ap-Uh8" secondAttribute="centerY" id="UVn-nu-Dcn"/>
+                                        <constraint firstItem="W4S-pl-sKz" firstAttribute="leading" secondItem="4Yd-rm-9N0" secondAttribute="trailing" constant="8" id="XAi-F9-l1d"/>
                                         <constraint firstItem="4Yd-rm-9N0" firstAttribute="leading" secondItem="uUE-Ap-Uh8" secondAttribute="leadingMargin" id="ZD2-6O-ReT"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="W4S-pl-sKz" secondAttribute="trailing" id="tuh-fP-9eB"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="labelNumber" destination="4Yd-rm-9N0" id="Eqp-Kd-9Qs"/>
-                                    <outlet property="textFieldItem" destination="Pg3-Rh-q2C" id="bzu-NW-PUM"/>
+                                    <outlet property="labelText" destination="W4S-pl-sKz" id="XQ8-lh-2uA"/>
                                 </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemAddTableViewCell" id="cfY-Jm-FmC" customClass="ItemAddTableViewCell" customModule="shinchoku" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="136" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cfY-Jm-FmC" id="DME-BO-4hg">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus_math-25.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZzH-vj-JJr">
+                                            <rect key="frame" x="288" y="9" width="25" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="dlu-XA-0Ph"/>
+                                                <constraint firstAttribute="width" constant="25" id="hIa-DP-8MN"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ZzH-vj-JJr" firstAttribute="centerX" secondItem="DME-BO-4hg" secondAttribute="centerX" id="bSf-zR-2DY"/>
+                                        <constraint firstItem="ZzH-vj-JJr" firstAttribute="centerY" secondItem="DME-BO-4hg" secondAttribute="centerY" id="gbC-7A-uMt"/>
+                                    </constraints>
+                                </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -115,10 +137,46 @@
                             <outlet property="delegate" destination="vsT-vQ-YUc" id="wXH-62-qhC"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="j98-wh-8OF" kind="presentation" identifier="toItemCreation" id="vGN-JI-qKN"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qyR-w3-eyr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1913" y="1122"/>
+        </scene>
+        <!--Item Creation View Controller-->
+        <scene sceneID="pPk-dz-sqA">
+            <objects>
+                <viewController id="j98-wh-8OF" customClass="ItemCreationViewController" customModule="shinchoku" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hvd-ZU-jpc"/>
+                        <viewControllerLayoutGuide type="bottom" id="iOF-2Y-1Zr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WYI-YC-8Xt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lpi-cB-QgE">
+                                <rect key="frame" x="28" y="68" width="544" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8639562880415157" green="1" blue="0.83601267416759328" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lpi-cB-QgE" firstAttribute="leading" secondItem="WYI-YC-8Xt" secondAttribute="leadingMargin" constant="8" id="Bgv-qC-5AR"/>
+                            <constraint firstItem="lpi-cB-QgE" firstAttribute="top" secondItem="Hvd-ZU-jpc" secondAttribute="bottom" constant="48" id="Suy-pp-c7k"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lpi-cB-QgE" secondAttribute="trailing" constant="8" id="gV0-yf-gUi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textFieldItem" destination="lpi-cB-QgE" id="bgC-gM-Ka4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gHP-Y5-kDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2678" y="1122"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DQb-JS-bvx">
@@ -140,4 +198,7 @@
             <point key="canvasLocation" x="360" y="1122"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plus_math-25.png" width="25" height="25"/>
+    </resources>
 </document>

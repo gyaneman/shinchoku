@@ -12,6 +12,9 @@
 		C37B7ACF1B939A0B003576B0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B7ACE1B939A0B003576B0 /* MessageUI.framework */; };
 		C37B7AD11B939C01003576B0 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37B7AD01B939C01003576B0 /* ItemTableViewCell.swift */; };
 		C37B7AD31B939C22003576B0 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37B7AD21B939C22003576B0 /* ItemTableViewController.swift */; };
+		C37B7AD61B94210A003576B0 /* plus_math-25.png in Resources */ = {isa = PBXBuildFile; fileRef = C37B7AD51B94210A003576B0 /* plus_math-25.png */; };
+		C37B7AD81B942185003576B0 /* ItemAddTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37B7AD71B942185003576B0 /* ItemAddTableViewCell.swift */; };
+		C37B7ADA1B9426C1003576B0 /* ItemCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37B7AD91B9426C1003576B0 /* ItemCreationViewController.swift */; };
 		C37EA4D71B937A8C000C9537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37EA4D61B937A8C000C9537 /* AppDelegate.swift */; };
 		C37EA4DC1B937A8C000C9537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37EA4DA1B937A8C000C9537 /* Main.storyboard */; };
 		C37EA4DF1B937A8C000C9537 /* shinchoku.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C37EA4DD1B937A8C000C9537 /* shinchoku.xcdatamodeld */; };
@@ -44,6 +47,9 @@
 		C37B7ACE1B939A0B003576B0 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		C37B7AD01B939C01003576B0 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		C37B7AD21B939C22003576B0 /* ItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
+		C37B7AD51B94210A003576B0 /* plus_math-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "plus_math-25.png"; path = "Images/plus_math-25.png"; sourceTree = "<group>"; };
+		C37B7AD71B942185003576B0 /* ItemAddTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemAddTableViewCell.swift; sourceTree = "<group>"; };
+		C37B7AD91B9426C1003576B0 /* ItemCreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCreationViewController.swift; sourceTree = "<group>"; };
 		C37EA4D31B937A8C000C9537 /* shinchoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shinchoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37EA4D61B937A8C000C9537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C37EA4DB1B937A8C000C9537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,8 +98,18 @@
 				C37B7ACC1B938EEF003576B0 /* ReportTableViewCell.swift */,
 				C37B7AD01B939C01003576B0 /* ItemTableViewCell.swift */,
 				C37B7AD21B939C22003576B0 /* ItemTableViewController.swift */,
+				C37B7AD71B942185003576B0 /* ItemAddTableViewCell.swift */,
+				C37B7AD91B9426C1003576B0 /* ItemCreationViewController.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		C37B7AD41B942081003576B0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C37B7AD51B94210A003576B0 /* plus_math-25.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		C37EA4CA1B937A8C000C9537 = {
@@ -120,6 +136,7 @@
 		C37EA4D51B937A8C000C9537 /* shinchoku */ = {
 			isa = PBXGroup;
 			children = (
+				C37B7AD41B942081003576B0 /* Images */,
 				C37B7AC61B938C0A003576B0 /* Classes */,
 				C37EA4D61B937A8C000C9537 /* AppDelegate.swift */,
 				C37EA4DA1B937A8C000C9537 /* Main.storyboard */,
@@ -253,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C37B7AD61B94210A003576B0 /* plus_math-25.png in Resources */,
 				C37EA4E41B937A8C000C9537 /* LaunchScreen.storyboard in Resources */,
 				C37EA4E11B937A8C000C9537 /* Assets.xcassets in Resources */,
 				C37EA4DC1B937A8C000C9537 /* Main.storyboard in Resources */,
@@ -284,7 +302,9 @@
 				C37EA4D71B937A8C000C9537 /* AppDelegate.swift in Sources */,
 				C37B7AD11B939C01003576B0 /* ItemTableViewCell.swift in Sources */,
 				C37B7ACD1B938EEF003576B0 /* ReportTableViewCell.swift in Sources */,
+				C37B7ADA1B9426C1003576B0 /* ItemCreationViewController.swift in Sources */,
 				C37B7AD31B939C22003576B0 /* ItemTableViewController.swift in Sources */,
+				C37B7AD81B942185003576B0 /* ItemAddTableViewCell.swift in Sources */,
 				C37EA4DF1B937A8C000C9537 /* shinchoku.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

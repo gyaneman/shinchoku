@@ -1,5 +1,5 @@
 //
-//  ItemTableViewCell.swift
+//  ItemAddTableViewCell.swift
 //  shinchoku
 //
 //  Created by 片岡崇史 on 2015/08/31.
@@ -8,11 +8,7 @@
 
 import UIKit
 
-class ItemTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var labelNumber: UILabel!
-    @IBOutlet weak var labelText: UILabel!
-    
+class ItemAddTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

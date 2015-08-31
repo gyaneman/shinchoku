@@ -47,12 +47,26 @@ class ItemTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ItemTableViewCell", forIndexPath: indexPath) as! ItemTableViewCell
+        var cell: UITableViewCell?
+        if indexPath.row != items!.count {
+            cell = tableView.dequeueReusableCellWithIdentifier("ItemTableViewCell", forIndexPath: indexPath)
+            (cell as! ItemTableViewCell).labelNumber.text = indexPath.row.description
+            (cell as! ItemTableViewCell).labelText.text = self.items![indexPath.row]
+        } else {
+            cell = tableView.dequeueReusableCellWithIdentifier("ItemAddTableViewCell", forIndexPath: indexPath)
+        }
+        //let cell = tableView.dequeueReusableCellWithIdentifier("ItemTableViewCell", forIndexPath: indexPath) as! ItemTableViewCell
 
-        // Configure the cell...
-        cell.labelNumber.text = indexPath.row.description
+        return cell!
+    }
 
-        return cell
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        /*if indexPath.row == items!.count {
+            performSegueWithIdentifier("toItemCreationView",sender: indexPath.row)
+            self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        }*/
+        performSegueWithIdentifier("toItemCreation", sender: indexPath)
+        self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
 
@@ -91,14 +105,22 @@ class ItemTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "toItemCreation" {
+            let viewController = segue.destinationViewController as! ItemCreationViewController
+            if sender!.row != self.items!.count {
+                viewController.textFieldItem.text = items![(sender as! NSIndexPath).row]
+            } else {
+                
+            }
+        }
     }
-    */
+
 
 }
