@@ -8,12 +8,18 @@
 
 import UIKit
 
-class ItemCreationViewController: UIViewController {
+protocol ItemCreationDelegate {
+    func appendItem(item: String)
+}
+
+class ItemCreationViewController: UIViewController , UITextFieldDelegate {
+    var delegate: ItemCreationDelegate?
+    
     @IBOutlet weak var textFieldItem: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        textFieldItem.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +28,14 @@ class ItemCreationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onBackButtonTouched(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+
+    @IBAction func onAddingButtonTouched(sender: AnyObject) {
+        self.delegate!.appendItem(self.textFieldItem.text!)
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
@@ -32,5 +46,10 @@ class ItemCreationViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 
 }

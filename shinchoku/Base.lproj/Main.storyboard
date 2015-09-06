@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--進捗どうですか？ww-->
+        <!--社畜わろす-->
         <scene sceneID="8pb-jN-dKi">
             <objects>
                 <tableViewController id="czh-HQ-AYQ" customClass="ReportTableViewController" customModule="shinchoku" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,7 +25,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1t-kT-I7T">
                                             <rect key="frame" x="8" y="11" width="584" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -45,18 +45,16 @@
                             <outlet property="delegate" destination="czh-HQ-AYQ" id="KPk-0r-UZJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="進捗どうですか？ww" id="2yr-v4-jba">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="4W0-Pr-ylJ">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KcQ-Ra-atj">
-                                <rect key="frame" x="508" y="7" width="72" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Send"/>
-                                <connections>
-                                    <action selector="onButtonSendTouched:" destination="czh-HQ-AYQ" eventType="touchUpInside" id="kBr-aL-qVI"/>
-                                </connections>
-                            </button>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="社畜わろす" id="IHd-fK-45X">
+                        <barButtonItem key="rightBarButtonItem" title="送信" id="5if-LJ-Yo0">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="onButtonSendTouched:" destination="czh-HQ-AYQ" id="4Ox-az-X6U"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="vsT-vQ-YUc" kind="show" identifier="toItemTableView" id="85v-qa-MMx"/>
                     </connections>
@@ -87,13 +85,13 @@
                                                 <constraint firstAttribute="width" constant="42" id="L1A-59-49x"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4S-pl-sKz">
                                             <rect key="frame" x="58" y="11" width="534" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -160,14 +158,40 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lpi-cB-QgE">
                                 <rect key="frame" x="28" y="68" width="544" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TV-de-WaG">
+                                <rect key="frame" x="38" y="116" width="96" height="30"/>
+                                <color key="backgroundColor" red="0.64072064157798869" green="0.81020329336791952" blue="0.88151041666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="7DO-wW-BYQ"/>
+                                </constraints>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="onBackButtonTouched:" destination="j98-wh-8OF" eventType="touchUpInside" id="jWB-hp-2vK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hb-1T-ER5">
+                                <rect key="frame" x="466" y="116" width="96" height="30"/>
+                                <color key="backgroundColor" red="0.7268440956157981" green="0.91910801965518796" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="xjt-Qe-OYI"/>
+                                </constraints>
+                                <state key="normal" title="追加"/>
+                                <connections>
+                                    <action selector="onAddingButtonTouched:" destination="j98-wh-8OF" eventType="touchUpInside" id="28I-Sy-8aE"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.8639562880415157" green="1" blue="0.83601267416759328" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.97277411810000003" blue="0.98030308219999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="lpi-cB-QgE" firstAttribute="leading" secondItem="WYI-YC-8Xt" secondAttribute="leadingMargin" constant="8" id="Bgv-qC-5AR"/>
+                            <constraint firstItem="5hb-1T-ER5" firstAttribute="top" secondItem="lpi-cB-QgE" secondAttribute="bottom" constant="18" id="CWu-7c-0up"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5hb-1T-ER5" secondAttribute="trailing" constant="18" id="NuW-8s-v6v"/>
                             <constraint firstItem="lpi-cB-QgE" firstAttribute="top" secondItem="Hvd-ZU-jpc" secondAttribute="bottom" constant="48" id="Suy-pp-c7k"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lpi-cB-QgE" secondAttribute="trailing" constant="8" id="gV0-yf-gUi"/>
+                            <constraint firstItem="3TV-de-WaG" firstAttribute="top" secondItem="lpi-cB-QgE" secondAttribute="bottom" constant="18" id="r25-JS-RXG"/>
+                            <constraint firstItem="3TV-de-WaG" firstAttribute="leading" secondItem="WYI-YC-8Xt" secondAttribute="leadingMargin" constant="18" id="rK9-j1-DJ4"/>
                         </constraints>
                     </view>
                     <connections>
@@ -176,7 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHP-Y5-kDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2678" y="1122"/>
+            <point key="canvasLocation" x="2576" y="1133"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DQb-JS-bvx">
