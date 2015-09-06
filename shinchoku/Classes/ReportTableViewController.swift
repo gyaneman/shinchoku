@@ -9,7 +9,7 @@
 import UIKit
 import MessageUI
 
-class ReportTableViewController: UITableViewController, MFMailComposeViewControllerDelegate {
+class ReportTableViewController: UITableViewController, MFMailComposeViewControllerDelegate, ItemTableDelegate {
     
     /** メールフォーマット サンプル
     =====
@@ -28,6 +28,7 @@ class ReportTableViewController: UITableViewController, MFMailComposeViewControl
 
     var reportItem: [String] = []
     var items: [[String]] = []
+    var enableNum: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -137,13 +138,20 @@ class ReportTableViewController: UITableViewController, MFMailComposeViewControl
             return
         }
         let viewController: ItemTableViewController = segue.destinationViewController as! ItemTableViewController
+        viewController.delegate = self
         viewController.text = self.reportItem[sender as! Int]
         viewController.items = self.items[sender as! Int]
+        enableNum = sender as! Int
     }
 
     
+    func setTaskItems(items: [String]) {
+        self.items[enableNum] = items
+    }
+    
     // 以下メール関係
     @IBAction func onButtonSendTouched(sender: AnyObject) {
+        
         if MFMailComposeViewController.canSendMail() == false {
             print("MFMailCompose can not send mail")
             return
@@ -153,18 +161,32 @@ class ReportTableViewController: UITableViewController, MFMailComposeViewControl
         
         mailViewController.mailComposeDelegate = self
         
-        mailViewController.setSubject("MessageUI test")
+        mailViewController.setSubject("mm月dd日(w)〜mm月dd日(w)")
         
-        let toRecipients = ["gyanexus7@gmail.com"]
+        let toRecipients = ["wrep@pl.info.kochi-tech.ac.jp"]
         mailViewController.setToRecipients(toRecipients)
         
         mailViewController.setMessageBody(createMailBody(), isHTML: false)
         
         self.presentViewController(mailViewController, animated: true, completion: nil)
+        
     }
     
     private func createMailBody() -> String {
-        return ""
+        var body: String = ""
+        body += "=====\n"
+        for (var i = 0; i < reportItem.count; i++) {
+            body += "[" + reportItem[i] + "]\n"
+            if items[i].count == 0 {
+                body += "* なし\n"
+            } else {
+                for j in items[i] {
+                    body += "* " + j + "\n"
+                }
+            }
+        }
+        body += "====="
+        return body
     }
 
     func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {

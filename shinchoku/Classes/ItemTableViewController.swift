@@ -8,8 +8,13 @@
 
 import UIKit
 
-class ItemTableViewController: UITableViewController {
+protocol ItemTableDelegate {
+    func setTaskItems(items: [String])
+}
 
+class ItemTableViewController: UITableViewController, UITextFieldDelegate, ItemCreationDelegate {
+    var delegate: ItemTableDelegate?
+    
     var text: String?
     var items: [String]?
 
@@ -70,25 +75,29 @@ class ItemTableViewController: UITableViewController {
     }
     
 
-    /*
+    
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
+        if indexPath.row >= self.items!.count {
+            return false
+        }
         return true
     }
-    */
+    
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             // Delete the row from the data source
+            self.items?.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.
@@ -97,16 +106,25 @@ class ItemTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support conditional rearranging of the table view.
     override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return false if you do not want the item to be re-orderable.
+        if indexPath.row >= self.items!.count {
+            return false
+        }
         return true
     }
-    */
+    
 
     
     // MARK: - Navigation
+
+    func appendItem(item: String) {
+        self.items!.append(item)
+        self.tableView.reloadData()
+        self.delegate!.setTaskItems(items!)
+    }
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -114,6 +132,7 @@ class ItemTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         if segue.identifier == "toItemCreation" {
             let viewController = segue.destinationViewController as! ItemCreationViewController
+            viewController.delegate = self
             if sender!.row != self.items!.count {
                 viewController.textFieldItem.text = items![(sender as! NSIndexPath).row]
             } else {
